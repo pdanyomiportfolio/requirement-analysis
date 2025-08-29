@@ -59,3 +59,36 @@ Requirement Analysis involves a series of activities that ensure software requir
 
 - **Requirement Validation**  
   Reviewing and confirming requirements with stakeholders to ensure they are complete, consistent, and aligned with business goals. This helps detect gaps and ensures that the documented requirements meet user expectations.
+
+## Types of Requirements
+
+In software engineering, requirements are broadly classified into **Functional Requirements** and **Non-functional Requirements**. Both are essential to ensure the system works correctly and provides a smooth user experience.
+
+### Functional Requirements
+
+Functional requirements define **what the system should do**. They specify the features, services, and tasks the system must perform.
+
+**Examples for Hotel Booking Management Project:**
+
+- Users should be able to **search for hotels** based on location, availability, and price.
+- Customers can **make a booking** and receive a confirmation notification.
+- Hotel managers can **add, update, or delete hotel details** such as room types, prices, and availability.
+- The system should **integrate with a payment gateway** (e.g., Stripe, PayPal) to handle transactions securely.
+- Customers and managers should be able to **view past and upcoming bookings**.
+
+---
+
+### Non-functional Requirements
+
+Non-functional requirements define **how the system should perform** rather than the specific features. They include quality attributes like performance, scalability, usability, and security.
+
+**Examples for Hotel Booking Management Project:**
+
+- **Performance:** The system should handle at least **10,000 concurrent users** without performance degradation.
+- **Scalability:** The architecture must support horizontal scaling using microservices and load balancers.
+- **Reliability:** The system should provide **99.9% uptime** with failover and disaster recovery mechanisms.
+- **Usability:** The booking portal should be intuitive, with **mobile-friendly UI** for both customers and hotel managers.
+- **Security:** All sensitive data (e.g., passwords, payment info) must be encrypted, and users must authenticate via **secure login methods (OAuth, 2FA)**.
+- **Latency:** Search results should be returned within **2 seconds** using caching (Redis) and indexing (Elasticsearch).
+
+---

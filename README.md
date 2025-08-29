@@ -138,3 +138,31 @@ This diagram reflects the **three core services** outlined in the architecture:
 1. **Hotel Management Service** – used by hotel managers.
 2. **Customer Service (Search + Booking)** – used by customers for browsing and booking.
 3. **View Booking Service** – used by both customers and managers to track reservations.
+
+## Acceptance Criteria
+
+Acceptance Criteria are the specific conditions that a software feature must meet to be considered complete and acceptable by stakeholders. They help ensure that requirements are clearly understood, testable, and aligned with the user’s needs.
+
+### Importance of Acceptance Criteria
+
+- **Clarity**: Removes ambiguity by defining what “done” means for a feature.
+- **Alignment**: Ensures developers, testers, and stakeholders have a shared understanding of requirements.
+- **Testability**: Provides measurable conditions that can be validated during testing.
+- **Scope Control**: Prevents scope creep by setting clear boundaries for a feature.
+
+### Example: Checkout Feature in Booking Management System
+
+**User Story:**  
+_As a customer, I want to securely complete my hotel booking and payment online so that my reservation is confirmed immediately._
+
+**Acceptance Criteria:**
+
+1. The system must allow the customer to review booking details (hotel name, dates, room type, price) before proceeding to checkout.
+2. The system must support multiple payment methods (e.g., credit/debit card, mobile money, PayPal).
+3. The system must validate payment information and display an error message for invalid details.
+4. The system must securely process the payment through the external payment service.
+5. Upon successful payment, the system must generate a booking confirmation and send a notification (email/SMS/app).
+6. The booking must be recorded in the booking database and visible under “My Bookings” for the customer.
+7. If payment fails, the system must display a failure message and allow the user to retry.
+
+This ensures the **Checkout feature** is complete, user-friendly, secure, and testable.

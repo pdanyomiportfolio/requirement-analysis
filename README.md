@@ -92,3 +92,49 @@ Non-functional requirements define **how the system should perform** rather than
 - **Latency:** Search results should be returned within **2 seconds** using caching (Redis) and indexing (Elasticsearch).
 
 ---
+
+## Use Case Diagrams
+
+Use Case Diagrams visually represent the interactions between **actors** (users or external systems) and the **system**. They help identify functional requirements by illustrating what actions each actor can perform and how the system responds.
+
+### Benefits of Use Case Diagrams
+
+- Clarify system boundaries and user interactions.
+- Provide a simple, high-level view of system functionality.
+- Improve communication between stakeholders and developers.
+- Serve as a foundation for creating detailed requirements and test cases.
+
+### Use Case Diagram for Booking System
+
+The following diagram shows the actors and their interactions with the hotel booking system:
+
+![Booking System Use Case Diagram](./diagrams/alx-booking-uc.png)
+
+### Explanation of the Actors and Use Cases
+
+- **Customer**
+
+  - _Search Hotels_: Browse available hotels using filters.
+  - _View Hotel Details_: Access hotel descriptions, pricing, and amenities.
+  - _Make Booking_: Reserve a hotel room through the booking service.
+  - _View Bookings_: See current and past reservations.
+  - _Receive Notifications_: Get booking confirmations, offers, and updates.
+
+- **Hotel Manager**
+
+  - _Manage Hotel Listings_: Add, update, or remove hotel information.
+  - _View Bookings_: Track customer reservations for hotel management.
+  - _Receive Notifications_: Alerts for new bookings or updates.
+
+- **Payment Service (External Actor)**
+
+  - _Process Payment_: Handles transactions securely on behalf of the booking system.
+
+- **Notification System (External Actor)**
+  - _Send Notifications_: Delivers confirmations and alerts to both customers and hotel managers.
+
+This diagram reflects the **three core services** outlined in the architecture:
+
+1. **Hotel Management Service** – used by hotel managers.
+2. **Customer Service (Search + Booking)** – used by customers for browsing and booking.
+3. **View Booking Service** – used by both customers and managers to track reservations.

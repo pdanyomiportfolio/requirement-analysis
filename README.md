@@ -108,7 +108,7 @@ Use Case Diagrams visually represent the interactions between **actors** (users 
 
 The following diagram shows the actors and their interactions with the hotel booking system:
 
-![Booking System Use Case Diagram](./diagrams/alx-booking-uc.png)
+![Booking System Use Case Diagram](./alx-booking-uc.png)
 
 ### Explanation of the Actors and Use Cases
 
